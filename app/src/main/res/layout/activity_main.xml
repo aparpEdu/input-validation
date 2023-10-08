@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         app:errorEnabled="true"
+        android:textColorHint="#f2f2f2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -20,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="name"
+            android:textColor="#cccccc"
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_name"
             android:inputType="textPersonName" />
@@ -33,12 +35,14 @@
         android:layout_height="wrap_content"
         app:errorEnabled="true"
         android:layout_marginTop="21dp"
+        android:textColorHint="#f2f2f2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_input_layout">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#f2f2f2"
             android:autofillHints="emailAddress"
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_email"
@@ -48,6 +52,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
+        android:textColorHint="#f2f2f2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -59,11 +64,13 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="51dp"
             android:autofillHints="phone"
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_phone_number"
-            android:inputType="numberSigned" />
+            android:inputType="numberSigned"
+            android:textColor="#f2f2f2"
+            android:textColorHint="#6eeb83" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -71,6 +78,7 @@
         android:layout_width="251dp"
         android:layout_height="56dp"
         android:layout_marginTop="16dp"
+        android:textColorHint="#f2f2f2"
         app:errorEnabled="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
@@ -82,6 +90,7 @@
             android:layout_height="wrap_content"
             android:autofillHints="birthday"
             android:enabled="false"
+            android:textColor="#f2f2f2"
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_birthday"
             android:inputType="date" />
@@ -92,6 +101,7 @@
         android:id="@+id/dateBtn"
         android:layout_width="59dp"
         android:layout_height="34dp"
+        android:textColor="#f2f2f2"
         android:layout_marginStart="6dp"
         android:layout_marginTop="27dp"
         android:layout_marginBottom="28dp"
@@ -110,6 +120,7 @@
         android:layout_marginTop="28dp"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#f2f2f2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
@@ -118,6 +129,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="height"
+            android:textColor="#f2f2f2"
+            android:textColorHint="#6eeb83"
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_height"
             android:inputType="numberDecimal" />
@@ -126,6 +139,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
+        android:textColor="#f2f2f2"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
