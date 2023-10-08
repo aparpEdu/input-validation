@@ -23,7 +23,9 @@
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_name"
             android:inputType="textPersonName" />
+
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -61,26 +63,45 @@
             android:autofillHints="phone"
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_phone_number"
-            android:inputType="phone" />
+            android:inputType="numberSigned" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
         android:layout_marginTop="16dp"
         app:errorEnabled="true"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
+
         <EditText
+            android:id="@+id/birthdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="birthday"
+            android:enabled="false"
             android:fontFamily="@font/gilroy"
             android:hint="@string/please_enter_your_birthday"
             android:inputType="date" />
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/dateBtn"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/baseline_edit_calendar_24"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="0.09" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout4"
@@ -91,15 +112,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" >
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
         <EditText
-            android:hint="@string/please_enter_your_height"
-            android:inputType="numberDecimal"
-            android:fontFamily="@font/gilroy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="height" />
+            android:autofillHints="height"
+            android:fontFamily="@font/gilroy"
+            android:hint="@string/please_enter_your_height"
+            android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
