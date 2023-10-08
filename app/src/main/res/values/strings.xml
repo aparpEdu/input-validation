@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">user-info</string>
+    <string name="app_name">User Info</string>
     <string name="please_enter_your_name">Please enter your name</string>
     <string name="please_enter_your_email">Please enter your Email</string>
     <string name="please_enter_your_phone_number">Please enter your phone number</string>
     <string name="please_enter_your_birthday">Please enter your birthday</string>
     <string name="please_enter_your_height">Please enter your height</string>
     <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="birthday">Birthday</string>
+    <string name="height">Height</string>
 </resources>
