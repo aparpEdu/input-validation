@@ -18,8 +18,7 @@ public class ValidationHelper {
       int day = Integer.parseInt(birthdateFormat[2]);
       int year = Integer.parseInt(birthdateFormat[0]);
       LocalDate birthdate = LocalDate.of(year, month, day);
-      return !birthdate.equals(LocalDate.now()) &&
-              !birthdate.isBefore(LocalDate.now().minusYears(150))
+      return !birthdate.equals(LocalDate.now())
               && !birthdate.isAfter(LocalDate.now());
    }
 
