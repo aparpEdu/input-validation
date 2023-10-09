@@ -8,8 +8,12 @@ public class  Validation {
                                      TextInputLayout height) {
         if (name.getEditText() != null) {
             String personName = name.getEditText().getText().toString();
+            if(!personName.contains(" ")){
+                name.setError("Please provide your full name");
+                return false;
+            }
             String[] fullName = personName.split(" ");
-            if (personName.isEmpty() || personName.startsWith(" ")) {
+            if (personName.startsWith(" ")) {
                 name.setError("Name cannot be empty");
                 return false;
             }
